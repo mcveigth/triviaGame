@@ -38,10 +38,14 @@ class Question:
 
     def check(self, player):
         """check whether the player input is correct or not"""
-        if self.options[int(player)] == self.answer:
-            print(True)
-        else:
-            print(False)
+        while True:
+            if -len(self.options) <= int(player) < len(self.options):
+                if self.options[int(player)] == self.answer:
+                    return True
+                break
+            else:
+                player = input("value out of range please insert a value inside the range: ")
+
 
 #to-do: print the instructions of the game and ask for some configurations
 #Welcome to this trivia game!
@@ -55,9 +59,21 @@ class Question:
 #Do you want a determinate number of questions to answer yes (y) or no (n)?
 
 #if(how many questions do you want to be ask?)
-def instructions():
-    print("Welcome to this trivia game!\nIt's pretty straight-forward, so I will ask you a few questions.")
-    player = input("Do you want to play a random subject, yes (y) or not (n)?")
+#categories = {"9": "General Knowledge",
+#              "10": "Entertainment: Books",
+#              "11": "Entertainment: Film",
+#              "12": "Entertainment: Music",
+#              "13": "Entertainment: Musicals & Theatres",
+#              "14": ""}
+
+#def instructions():
+#    "code to give some instructions to the user, not going to use it in this version..."
+#    category = ""
+#    print("Welcome to this trivia game!\nIt's pretty straight-forward, so I will ask you a few questions.")
+#    player = input("Do you want to play a random subject, yes (y) or not (n)?")
+#    if player == "not" or "n":
+#        print("Choose a category:\n ")
+#        category = input()
 
 if __name__ == '__main__':
     pass
