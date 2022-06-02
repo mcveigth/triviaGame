@@ -47,26 +47,26 @@ class Question:
                 player = input("value out of range please insert a value inside the range: ")
 
 
-#to-do: print the instructions of the game and ask for some configurations
-#Welcome to this trivia game!
+# to-do: print the instructions of the game and ask for some configurations
+# Welcome to this trivia game!
 
-#It's pretty straight-forward, so I will just ask you a few questions.
+# It's pretty straight-forward, so I will just ask you a few questions.
 
-#Do you want to play a random subject, yes (y) or not (n)?
+# Do you want to play a random subject, yes (y) or not (n)?
 
-#if not(display list of subjects)
+# if not(display list of subjects)
 
-#Do you want a determinate number of questions to answer yes (y) or no (n)?
+# Do you want a determinate number of questions to answer yes (y) or no (n)?
 
-#if(how many questions do you want to be ask?)
-#categories = {"9": "General Knowledge",
+# if(how many questions do you want to be ask?)
+# categories = {"9": "General Knowledge",
 #              "10": "Entertainment: Books",
 #              "11": "Entertainment: Film",
 #              "12": "Entertainment: Music",
 #              "13": "Entertainment: Musicals & Theatres",
 #              "14": ""}
 
-#def instructions():
+# def instructions():
 #    "code to give some instructions to the user, not going to use it in this version..."
 #    category = ""
 #    print("Welcome to this trivia game!\nIt's pretty straight-forward, so I will ask you a few questions.")

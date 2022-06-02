@@ -16,4 +16,4 @@ if __name__ == '__main__':
         answer = input("answer: ")
         if num.check(answer) is True:
             playerScore += 1
-    print(playerScore)
+    print(f'you got {playerScore} out of {numberOfQuestions}')
